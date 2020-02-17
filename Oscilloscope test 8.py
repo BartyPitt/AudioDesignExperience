@@ -60,8 +60,6 @@ while True:
     # binary data
     data = stream.read(CHUNK)
 
-    #print(data)
-
     # convert data to integers, make np array, then offset it by 127
     data_int = struct.unpack(str(CM * CHUNK) + 'B', data) #B
 
