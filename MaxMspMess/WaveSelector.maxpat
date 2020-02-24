@@ -56,7 +56,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 441.0, 349.0, 55.0, 22.0 ],
+					"patching_rect" : [ 334.0, 317.0, 55.0, 22.0 ],
 					"text" : "triangle~"
 				}
 
