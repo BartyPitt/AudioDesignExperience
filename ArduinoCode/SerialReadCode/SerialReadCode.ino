@@ -5,7 +5,81 @@
 #define NUMPIXELS 16
 Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
+/*
+Class for the rotatry Indexor
+*/
 
+class RotaryIndexor
+{
+  public:
+    RotaryIndexor(int ChipSelect , int Rotationa , int Rotationb , int PushedButton);
+    void Update();
+    int Rotations();
+    bool Button();
+  private:
+    
+    int _PreviousState;
+    int _ChipSelectPin;
+    int _RotationaPin;
+    int _RotationbPin;
+    int _PushedButtonPin;
+    bool _PushedButtonState;
+    int _Rotations;
+
+};
+
+RotaryIndexor::RotaryIndexor(int ChipSelect , int Rotationa , int Rotationb , int PushedButtonPin)
+{
+  pinMode(ChipSelect , OUTPUT);
+  int _ChipSelectPin = ChipSelect;
+  int _RotationaPin = Rotationa;
+  int _RotationbPin = Rotationb;
+  int _PushedButtonPin = PushedButtonPin;
+}
+
+void RotaryIndexor::Update()
+{
+  digitalWrite(_ChipSelectPin , HIGH);
+
+  
+
+  if (digitalRead(_RotationaPin)):
+    {
+      CurrentScore += 1;
+    }
+  if (digitalRead(_RotationbPin)):
+  {
+    CurrentScore += 2;
+  }
+  if (CurrentScore - _PreviousState == 1 || CurrentScore - _PreviousState == -3):
+  {
+    _Rotations = _Rotations + 1;
+  }
+  else if(CurrentScore = _PreviousState):
+  {
+    ;
+  }
+  else
+  {
+    _Rotations = _Rotations - 1
+  }
+
+  digitalWrite(_ChipSelectPin , LOW)
+  
+
+}
+
+int RotaryIndexor::Rotations()
+{
+  temp = _Rotations
+  _Rotations = 0
+  return _Rotations
+}
+
+bool RotaryIndexor::Button()
+{
+  return _PushedButtonState
+}
 
 String MsgIn = ""; 
 
