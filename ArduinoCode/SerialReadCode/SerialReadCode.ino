@@ -39,8 +39,8 @@ RotaryIndexor::RotaryIndexor(int ChipSelect , int Rotationa , int Rotationb , in
 
 void RotaryIndexor::Update()
 {
+  //Updates all of the varibles. DOES NOT RETURN ANYTHING.
   digitalWrite(_ChipSelectPin , HIGH);
-
   
 
   if (digitalRead(_RotationaPin)):
@@ -71,6 +71,7 @@ void RotaryIndexor::Update()
 
 int RotaryIndexor::Rotations()
 {
+  //Takes the Rotation out of the Rotations varible AND resets it.
   temp = _Rotations
   _Rotations = 0
   return _Rotations
@@ -78,39 +79,16 @@ int RotaryIndexor::Rotations()
 
 bool RotaryIndexor::Button()
 {
+  //Takes the Button State and prints it.
   return _PushedButtonState
 }
 
 String MsgIn = ""; 
 
-void setup() {
-  // put your setup code here, to run once:
-  Serial.begin(115200);
-  pixels.begin(); // INITIALIZE NeoPixel strip object (REQUIRED)
-
-
-}
-
-void loop() {
-  // put your main code here, to run repeatedly:
-  while (Serial.available() > 0) {
-    char inChar = Serial.read();
-    MsgIn += inChar;
-  }
-  if (MessageDecoder(MsgIn))
-  {
-    Serial.println(MsgIn);
-    Serial.println("ShouldBeWorking");
-    MsgIn = "";
-    Serial.flush();
-  }
-  Serial.flush();
-  
-  
-}
 
 bool MessageDecoder(String Msg)
 {
+  //The code that decodes the message coming from the arduino.
   
   if (Msg.endsWith("$"))
   {
@@ -149,4 +127,43 @@ bool MessageDecoder(String Msg)
   {
     return false;
   }
+}
+
+
+/*
+I should put the varibles here
+
+
+
+*/
+
+RotorA RotaryIndexor(1,2,3,4);
+
+
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(115200);
+  pixels.begin(); // INITIALIZE NeoPixel strip object (REQUIRED)
+  
+  RotorA.Update()
+
+}
+
+void loop() {
+  RotarA.Update();
+  while (Serial.available() > 0) {
+    char inChar = Serial.read();
+    MsgIn += inChar;
+  }
+  if (MessageDecoder(MsgIn))
+  {
+    Serial.println(MsgIn);
+    Serial.println("ShouldBeWorking");
+    MsgIn = "";
+    Serial.flush();
+  }
+  Serial.flush();
+  
+  
 }
