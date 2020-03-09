@@ -41,30 +41,30 @@ void RotaryIndexor::Update()
 {
   //Updates all of the varibles. DOES NOT RETURN ANYTHING.
   digitalWrite(_ChipSelectPin , HIGH);
-  
+  int CurrentScore = 0;
 
-  if (digitalRead(_RotationaPin)):
+  if (digitalRead(_RotationaPin))
     {
       CurrentScore += 1;
     }
-  if (digitalRead(_RotationbPin)):
+  if (digitalRead(_RotationbPin))
   {
     CurrentScore += 2;
   }
-  if (CurrentScore - _PreviousState == 1 || CurrentScore - _PreviousState == -3):
+  if (CurrentScore - _PreviousState == 1 || CurrentScore - _PreviousState == -3)
   {
     _Rotations = _Rotations + 1;
   }
-  else if(CurrentScore = _PreviousState):
+  else if(CurrentScore = _PreviousState)
   {
     ;
   }
   else
   {
-    _Rotations = _Rotations - 1
+    _Rotations = _Rotations - 1;
   }
 
-  digitalWrite(_ChipSelectPin , LOW)
+  digitalWrite(_ChipSelectPin , LOW);
   
 
 }
@@ -72,15 +72,15 @@ void RotaryIndexor::Update()
 int RotaryIndexor::Rotations()
 {
   //Takes the Rotation out of the Rotations varible AND resets it.
-  temp = _Rotations
-  _Rotations = 0
-  return _Rotations
+  int temp = _Rotations;
+  _Rotations = 0;
+  return temp;
 }
 
 bool RotaryIndexor::Button()
 {
   //Takes the Button State and prints it.
-  return _PushedButtonState
+  return _PushedButtonState;
 }
 
 String MsgIn = ""; 
@@ -137,7 +137,7 @@ I should put the varibles here
 
 */
 
-RotorA RotaryIndexor(1,2,3,4);
+RotaryIndexor RotorA(1,2,3,4);
 
 
 
@@ -146,12 +146,12 @@ void setup() {
   Serial.begin(115200);
   pixels.begin(); // INITIALIZE NeoPixel strip object (REQUIRED)
   
-  RotorA.Update()
+  RotorA.Update();
 
 }
 
 void loop() {
-  RotarA.Update();
+  RotorA.Update();
   while (Serial.available() > 0) {
     char inChar = Serial.read();
     MsgIn += inChar;

@@ -4,7 +4,9 @@
             "name": "Linux",
             "includePath": [
                 "/home/bartypitt/Documents/Arduino/arduino-1.8.12-linux64/arduino-1.8.12/tools/**",
-                "/home/bartypitt/Documents/Arduino/arduino-1.8.12-linux64/arduino-1.8.12/hardware/arduino/avr/**"
+                "/home/bartypitt/Documents/Arduino/arduino-1.8.12-linux64/arduino-1.8.12/hardware/arduino/avr/**",
+                "Documents/Arduino/arduino-1.8.12-linux64/arduino-1.8.12/hardware/arduino/avr/**",
+                "Documents/Arduino/arduino-1.8.12-linux64/arduino-1.8.12/tools/**"
             ],
             "forcedInclude": [
                 "Documents/Arduino/arduino-1.8.12-linux64/arduino-1.8.12/hardware/arduino/avr/cores/arduino/Arduino.h"
