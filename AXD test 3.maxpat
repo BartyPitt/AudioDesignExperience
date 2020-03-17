@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1449.0, 929.0 ],
+		"rect" : [ 803.0, 84.0, 699.0, 705.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -199,7 +199,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 26.0, 85.0, 1852.0, 929.0 ],
+						"rect" : [ 41.0, 85.0, 1852.0, 929.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3883,7 +3883,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 42.0, 85.0, 1852.0, 929.0 ],
+						"rect" : [ 41.0, 84.0, 1468.0, 713.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3910,6 +3910,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -4109,7 +4110,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 84.0, 132.0, 640.0, 480.0 ],
+										"rect" : [ 83.0, 132.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -6409,7 +6410,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 84.0, 132.0, 640.0, 480.0 ],
+										"rect" : [ 547.0, 138.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -6436,6 +6437,7 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
+										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-9",
@@ -6639,7 +6641,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 330.0, 435.0, 640.0, 480.0 ],
+										"rect" : [ 399.0, 214.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -11139,15 +11141,15 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 450.5, 152.5, 42.0, 229.0 ],
+					"patching_rect" : [ 305.5, 28.0, 42.0, 229.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.slider",
-							"parameter_mmax" : 1000.0,
 							"parameter_shortname" : "live.slider",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0,
-							"parameter_mmin" : 100.0
+							"parameter_mmin" : 100.0,
+							"parameter_longname" : "live.slider",
+							"parameter_mmax" : 1000.0
 						}
 
 					}
