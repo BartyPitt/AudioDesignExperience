@@ -130,11 +130,11 @@
 					"presentation_rect" : [ 6.0, 147.5, 61.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "live.menu",
 							"parameter_enum" : [ "points", "lines", "line_strip", "line_loop", "triangles", "tri_strip", "tri_fan", "quads", "quad_strip", "polygon", "tri_grid" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "live.menu",
-							"parameter_mmax" : 10,
-							"parameter_shortname" : "live.menu"
+							"parameter_mmax" : 10
 						}
 
 					}
@@ -156,11 +156,11 @@
 					"presentation_rect" : [ 17.0, 192.0, 15.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "live.toggle",
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "live.toggle",
-							"parameter_mmax" : 1,
-							"parameter_shortname" : "live.toggle"
+							"parameter_mmax" : 1
 						}
 
 					}
@@ -1300,12 +1300,12 @@
 					"presentation_rect" : [ 261.5, 62.5, 42.0, 229.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "live.slider",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0,
 							"parameter_mmin" : 100.0,
 							"parameter_longname" : "live.slider",
-							"parameter_mmax" : 1000.0,
-							"parameter_shortname" : "live.slider"
+							"parameter_mmax" : 1000.0
 						}
 
 					}
@@ -1321,7 +1321,9 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1194.666666666666742, 600.0, 114.0, 114.0 ]
+					"patching_rect" : [ 1194.666666666666742, 600.0, 114.0, 114.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1194.666666666666742, 600.0, 114.0, 114.0 ]
 				}
 
 			}
