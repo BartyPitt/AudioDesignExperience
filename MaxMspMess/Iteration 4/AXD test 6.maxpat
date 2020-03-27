@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 42.0, 85.0, 1452.0, 929.0 ],
+		"rect" : [ 34.0, 77.0, 1468.0, 713.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -393,7 +393,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 930.66666666666697, 804.5, 121.5, 22.0 ],
-					"text" : "set 0. dBFS"
+					"text" : "set -0.48 dBFS"
 				}
 
 			}
@@ -401,14 +401,15 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-31",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 891.0, 926.0, 75.0, 23.0 ],
+					"patching_rect" : [ 891.0, 926.0, 75.0, 39.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 642.5, 790.125000000000114, 69.0, 39.0 ],
-					"text" : "0.00 dBFS",
+					"text" : "-0.48 dBFS",
 					"textcolor" : [ 0.717647058823529, 0.717647058823529, 0.717647058823529, 1.0 ],
 					"textjustification" : 1
 				}
@@ -669,7 +670,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 242.75, 1099.0, 138.0, 22.0 ],
 					"style" : "default",
-					"text" : "color 0.316 0. 1. 1."
+					"text" : "color 0.432 0. 1. 1."
 				}
 
 			}
@@ -769,7 +770,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 137.0, 265.0, 121.5, 22.0 ],
-					"text" : "set 242 Hz"
+					"text" : "set 294 Hz"
 				}
 
 			}
@@ -783,7 +784,7 @@
 					"patching_rect" : [ 137.0, 309.296296417713165, 70.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 140.725000000000023, 799.125, 70.0, 23.0 ],
-					"text" : "242 Hz",
+					"text" : "294 Hz",
 					"textcolor" : [ 0.717647058823529, 0.717647058823529, 0.717647058823529, 1.0 ],
 					"textjustification" : 1
 				}
@@ -892,11 +893,11 @@
 					"presentation_rect" : [ 869.764703452587128, 624.352944612503052, 188.352943778038025, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "points", "lines", "line_strip", "line_loop", "triangles", "tri_strip", "tri_fan", "quads", "quad_strip", "polygon", "tri_grid" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "live.menu",
 							"parameter_mmax" : 10,
-							"parameter_shortname" : "live.menu",
-							"parameter_enum" : [ "points", "lines", "line_strip", "line_loop", "triangles", "tri_strip", "tri_fan", "quads", "quad_strip", "polygon", "tri_grid" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "live.menu"
 						}
 
 					}
@@ -917,11 +918,11 @@
 					"patching_rect" : [ 734.211112713813691, 889.0, 15.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "live.toggle",
 							"parameter_mmax" : 1,
-							"parameter_shortname" : "live.toggle",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "live.toggle"
 						}
 
 					}
@@ -3107,35 +3108,35 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "octave_2.maxpat",
-				"bootpath" : "D:/Music/Imperial/Year 3/AXD/Iteration 4",
+				"bootpath" : "~/Documents/Year3/Audio/Cw/AudioDesignExperience/MaxMspMess/Iteration 4",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cyc2.maxpat",
-				"bootpath" : "D:/Music/Imperial/Year 3/AXD/Iteration 4",
+				"bootpath" : "~/Documents/Year3/Audio/Cw/AudioDesignExperience/MaxMspMess/Iteration 4",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "WaveSelector.maxpat",
-				"bootpath" : "D:/Music/Imperial/Year 3/AXD/Iteration 4",
+				"bootpath" : "~/Documents/Year3/Audio/Cw/AudioDesignExperience/MaxMspMess/Iteration 4",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "randomPhase.maxpat",
-				"bootpath" : "D:/Music/Imperial/Year 3/AXD/Iteration 4",
+				"bootpath" : "~/Documents/Year3/Audio/Cw/AudioDesignExperience/MaxMspMess/Iteration 4",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "BinarySplitter.maxpat",
-				"bootpath" : "D:/Music/Imperial/Year 3/AXD/Iteration 4",
+				"bootpath" : "~/Documents/Year3/Audio/Cw/AudioDesignExperience/MaxMspMess/Iteration 4",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
